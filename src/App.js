@@ -3,7 +3,7 @@ import ContactContainer from "./components/ContactContainer";
 
 function App() {
   return (
-    <div className="flex">
+    <div className="flex overflow-hidden">
       <ContactContainer/>
       <ChatBox/>
     </div>
