@@ -85,7 +85,7 @@ export default function ChatBox({ socketRef }) {
         </div>
         <div className='h-[72px] p-[10px] flex bg-slate-100 items-center'>
           <input value={messageBox} onChange={(e)=>setMessageBox(e.target.value)} className='rounded-lg grow border-2 p-3 w-11/12' placeholder='Type Here' />
-          <div onClick={sendMessage} className='ml-2 p-3 rounded-2xl bg-neutral-900 text-white font-semibold text-xl'>Send</div>
+          <div onClick={sendMessage} className='ml-2 p-3 cursor-pointer rounded-2xl bg-neutral-900 text-white font-semibold text-xl'>Send</div>
         </div>
       </div>
     )
