@@ -6,5 +6,5 @@ export const socketInit=()=>{
         timeout:10000,
         transport:['websocket']
     }
-    return io('http://localhost:5500',options)
+    return io('https://mychat-backend.up.railway.app/',options)
 }

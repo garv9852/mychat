@@ -24,7 +24,6 @@ export default function ChatBox({ socketRef }) {
     socketRef.current.on("RECEIVE_MESG", ({peerId,data}) => {
       if(chat[peerId]===undefined) chat[peerId]=[];
       chat[peerId].push({ type: "receive", data })
-      console.log(chatUser.socketId,peerId)
       if(chatUserRef.current.socketId!==peerId)
       {
         clientsRef.current=clientsRef.current.map((e)=>{
